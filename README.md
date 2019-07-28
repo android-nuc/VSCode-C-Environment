@@ -1,11 +1,11 @@
-# SCode-C-Environment
+# VSCode-C-Environment
 
 针对 Android 实验室成员 C 语言练习的 VSCode C 语言环境一键配置。
 
 ## 使用方法
 
-1. 下载 msys64 环境[【从Github】]()[【从百度云】]()
-2. 直接解压到 **C盘** （可能需要管理员权限）
+1. 下载 msys64 环境[【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/1.0/Msys64-RT.zip)[【从百度云】](https://pan.baidu.com/s/1C0gi_RsI6OD9jGel8Tz7Vg)[【从Office365】]()
+2. 直接整个压缩包解压到 **C盘** （可能需要管理员权限）
 3. 安装 Visual Studio Code[【下载地址】](https://code.visualstudio.com/docs/?dv=win64user)
 4. 打开 Visual Studio Code，按下 Ctrl+Shift+X
 5. 依次搜索、安装如下扩展：`C/C++` `Code Runner`
@@ -17,6 +17,6 @@
 
 当你写代码时，在右侧面板的调试 🐞 按钮，点击 `▷ gdb` 即可开始调试项目
 
-### build
+### C-Project/build
 
 项目生成在这个目录。如果没有这个目录，必须先手动创建才能编译。

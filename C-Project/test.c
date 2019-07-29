@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 int main() {
     printf("GNU version is : %d\n", __MINGW_GCC_VERSION);

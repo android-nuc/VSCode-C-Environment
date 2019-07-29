@@ -30,3 +30,9 @@
 ### C-Project/build
 
 项目生成在这个目录。如果没有这个目录，必须先手动创建才能编译。
+
+### 注：关于代码提示
+
+- 首先请在`C-Project/.vscode/c.code-snippets`中的`announce`(文件声明)字段添加作者名字(如下图在author: 后面写上作者名(无需真实姓名))<br>![author](images/author.png)
+
+- 这里的代码Snippets均重写过，采用的是`K&R`风格，如果不喜欢想更换为微软风格可以在`C-Project/.vscode/settings.json`里将最下方`C_Cpp.suggestSnippets: false`更改为true或者删除此字段

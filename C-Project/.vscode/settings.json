@@ -19,4 +19,7 @@
     "code-runner.preserveFocus": false,
     // 在运行代码之前保存文件
     "code-runner.saveFileBeforeRun": true,
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on",
+    "C_Cpp.suggestSnippets": false
 }

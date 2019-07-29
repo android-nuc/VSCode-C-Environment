@@ -103,7 +103,7 @@
 	},
 	"main":{
 		"prefix": "main",
-		"body": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\t$0\n\n\treturn 0;\n}",
+		"body": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n\t$0\n\n\treturn 0;\n}",
 		"description": "主函数",
 		"scope": "c"
 	}

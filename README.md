@@ -11,7 +11,9 @@
 5. 依次搜索、安装如下扩展：`C/C++` `Code Runner`
 6. 下载并解压这个项目，右击 `C-Project` 这个文件夹，选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）：
 
-**备注**：VScode 默认没有中文，搜索 `Chinese (Simplified) Language Pack` 扩展即可安装中文语言。 
+![Screenshot1](images/1.jpg)
+
+**备注**：VScode 默认没有中文，搜索 `Chinese (Simplified) Language Pack` 扩展即可安装中文语言。此外，如果你觉得 VSCode 的字太小，可以按 `Ctrl+加号` 放大，反之，按 `Ctrl+减号` 缩小
 
 ## C-Project
 

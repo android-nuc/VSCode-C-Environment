@@ -6,14 +6,14 @@
 
 ## 使用方法
 
-1. 下载 msys64 环境[【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/1.0/Msys64-RT.zip)[【从百度云】](https://pan.baidu.com/s/1C0gi_RsI6OD9jGel8Tz7Vg)[【从Office365】](https://cutesakura-my.sharepoint.com/:u:/g/personal/kenvix_cutesakura_net/Ec20TtbKog9HkAPF9E4tZhsBwGX9fBhQghBqlfYuyTDbhA?e=EXl0l0)
+1. 下载 msys64 环境[【从百度云】](https://pan.baidu.com/s/1C0gi_RsI6OD9jGel8Tz7Vg)[【从Office365】](https://cutesakura-my.sharepoint.com/:u:/g/personal/kenvix_cutesakura_net/Ec20TtbKog9HkAPF9E4tZhsBwGX9fBhQghBqlfYuyTDbhA?e=EXl0l0) [【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/1.0/Msys64-RT.zip)
 2. 直接整个压缩包解压到 **C盘** （可能需要管理员权限）
 3. 将 `C:\RT\msys64\mingw64\bin` 添加到系统 `PATH` 环境变量（[不知道如何修改环境变量请点击此处](https://jingyan.baidu.com/article/8ebacdf02d3c2949f65cd5d0.html)）
 4. 安装 Visual Studio Code[【下载地址】](https://code.visualstudio.com/docs/?dv=win64user)
 5. 打开 Visual Studio Code，按下 Ctrl+Shift+X
 6. 依次搜索、安装如下扩展：`C/C++` `Code Runner`
 7. 下载这个项目（点击右上方<font color=darkgreen>绿色的 **Clone or Download**</font>，然后点击 **Download Zip**）
-8. 解压这个项目，右击 `C-Project` 这个文件夹，选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）：
+8. 解压这个项目，(C语言)右击 `C-Project` 这个文件夹（C++为`C++-Project`），选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）：
 
 ![Screenshot1](images/1.jpg)
 
@@ -25,7 +25,7 @@
 
 提供一个 Hello world 样例文件 `test.c`，可用于测试环境配置是否成功。
 
-点击左侧面板的项目 📑 按钮管理项目文件。新建文件请以 .c 结尾来创建 c 语言文件。
+点击左侧面板的项目 📑 按钮管理项目文件。新建文件请以 .c 结尾来创建 C 语言文件。
 
 当你写代码时，在左侧面板的调试 🐞 按钮，点击 `▷ (gdb) Launch` 即可开始调试项目（你现在在写哪个文件就是调试哪个）。
 
@@ -40,6 +40,10 @@
 ## C++-Project
 
 适用于 C++ 语言的项目目录。将你的C++语言代码放到这里。每个文件是互相独立的，可以独立编译、运行、调试。
+
+提供一个 Hello world 样例文件 `test.cpp`，可用于测试环境配置是否成功。
+
+新建文件请以 .cpp 结尾来创建 C++ 语言文件。
 
 其他同上。
 

@@ -12,7 +12,7 @@
 			" * author: ", 
 			" * generation time: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
 			" * filename: $TM_FILENAME",
-			" * language & build version : C 11",
+			" * language & build version : C 11 & C++ 17",
 			"*/"
 		],
 		"description": "署名注释",

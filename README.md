@@ -17,7 +17,7 @@
 5. 打开 Visual Studio Code，按下 Ctrl+Shift+X
 6. 依次搜索、安装如下扩展：`C/C++` `Code Runner`
 7. 下载这个项目（点击右上方<font color=darkgreen>绿色的 **Clone or Download**</font>，然后点击 **Download Zip**）
-8. 解压这个项目，(C语言)右击 `C-Project` 这个文件夹（C++为`C++-Project`），选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）：
+8. 解压这个项目（**不要解压到有中文或空格的路径！**），(C语言)右击 `C-Project` 这个文件夹（C++为`C++-Project`），选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）：
 
 ![Screenshot1](images/1.jpg)
 

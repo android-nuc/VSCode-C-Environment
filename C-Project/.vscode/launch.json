@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "(gdb) Launch C",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/build/${fileBasenameNoExtension}.exe",
@@ -25,7 +25,7 @@
                 }
             ],
             // 这里要与你在 tasks.json 中配置的 label 一致
-            "preLaunchTask": "compile",
+            "preLaunchTask": "compileC",
         }
     ]
 }

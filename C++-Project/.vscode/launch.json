@@ -25,7 +25,30 @@
                 }
             ],
             // 这里要与你在 tasks.json 中配置的 label 一致
-            "preLaunchTask": "compile",
+            "preLaunchTask": "compileCpp",
+        },
+        {
+            "name": "(gdb) Launch C",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/build/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            // 这里填你 MinGW-w64 安装目录下的 gdb 路径
+            "miDebuggerPath": "C:\\RT\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // 这里要与你在 tasks.json 中配置的 label 一致
+            "preLaunchTask": "compileC",
         }
     ]
 }

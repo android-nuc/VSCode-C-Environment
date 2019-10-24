@@ -4,6 +4,10 @@
 
 2019/9/12：新增两个目录，`C-Project` 适用于 C 语言练习，`C++-Project` 适用于 C++ 练习。
 
+请及时将你本地的环境升级到本代码库的最新版本。（重复下述步骤的第 7、8 步即可）
+
+**更新环境时请*不要*覆盖`c.code-snippets`文件！覆盖除此文件以外的其他所有文件即可更新环境**
+
 ## 使用方法
 
 1. 下载 msys64 环境[【从百度云】](https://pan.baidu.com/s/1C0gi_RsI6OD9jGel8Tz7Vg)[【从Office365】](https://cutesakura-my.sharepoint.com/:u:/g/personal/kenvix_cutesakura_net/Ec20TtbKog9HkAPF9E4tZhsBwGX9fBhQghBqlfYuyTDbhA?e=EXl0l0) [【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/1.0/Msys64-RT.zip)
@@ -27,7 +31,7 @@
 
 点击左侧面板的项目 📑 按钮管理项目文件。新建文件请以 .c 结尾来创建 C 语言文件。
 
-当你写代码时，在左侧面板的调试 🐞 按钮，点击 `▷ (gdb) Launch` 即可开始调试项目（你现在在写哪个文件就是调试哪个）。
+当你写代码时，在左侧面板的调试 🐞 按钮，点击 `▷ (gdb) Launch C` 即可开始调试项目（你现在在写哪个文件就是调试哪个）。
 
 如果你只想运行而不需要调试，点击右上角的 `▷` 可以直接运行而不调试。相比与调试来说，代码输出会直接显示到 VSCode，在程序运行后不会消失，更方便一些。
 

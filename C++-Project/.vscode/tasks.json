@@ -28,7 +28,7 @@
                 "owner": "cpp",
                 "fileLocation": "absolute",
                 "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error):\\s+(.*)$",
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
                     "file": 1,
                     "line": 2,
                     "column": 3,
@@ -62,7 +62,7 @@
                 "owner": "cpp",
                 "fileLocation": "absolute",
                 "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error):\\s+(.*)$",
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
                     "file": 1,
                     "line": 2,
                     "column": 3,
@@ -70,6 +70,26 @@
                     "message": 5
                 }
             }
+        },
+        {
+            "label": "compileMSVC",
+            "type": "shell",
+            "command": "${fileDirname}\\.vscode\\compileMSVC.bat",
+            "args": [
+                "\"${file}\"",
+                "\"${fileDirname}\\build\\${fileBasename}\""
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false,
+                "echo": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
         }
     ]
 }

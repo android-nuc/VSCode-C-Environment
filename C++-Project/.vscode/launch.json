@@ -4,8 +4,9 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
-            "name": "(gdb) Launch C++",
+            "name": "(GCC) Launch C++",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/build/${fileBasenameNoExtension}.exe",
@@ -28,7 +29,7 @@
             "preLaunchTask": "compileCpp",
         },
         {
-            "name": "(gdb) Launch C",
+            "name": "(GCC) Launch C",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/build/${fileBasenameNoExtension}.exe",
@@ -49,6 +50,17 @@
             ],
             // 这里要与你在 tasks.json 中配置的 label 一致
             "preLaunchTask": "compileC",
+        },
+        {
+            "name": "(MSVC) Launch C++",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}/build/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "preLaunchTask": "compileMSVC"
         }
     ]
 }

@@ -29,5 +29,11 @@
     // 词语优先级
     "editor.suggest.localityBonus": true,
     // 这里更改为根据之前的补全进行排序
-    "editor.suggestSelection": "recentlyUsedByPrefix"
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "files.associations": {
+        "windows.h": "c",
+        "mcx.h": "c",
+        "linkedstack.c": "cpp",
+        "containers.h": "c"
+    }
 }

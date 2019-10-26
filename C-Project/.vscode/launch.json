@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch C",
+            "name": "(GCC) Launch C",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/build/${fileBasenameNoExtension}.exe",

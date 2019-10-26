@@ -4,12 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "compile",
+            "label": "compileC",
             "type": "shell",
             "command": "gcc",
             "args": [
                 "-g",
                 "\"${file}\"",
+                "-fexec-charset=GBK",
                 "-o",
                 "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
             ],
@@ -27,7 +28,7 @@
                 "owner": "cpp",
                 "fileLocation": "absolute",
                 "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error):\\s+(.*)$",
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
                     "file": 1,
                     "line": 2,
                     "column": 3,

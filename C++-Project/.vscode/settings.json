@@ -12,8 +12,8 @@
     // 不然源码文件和编译结果混杂在一个目录中非常杂乱（尤其是刷题时）
     // 这里只保留了 C 和 C++ 的编译命令，有需要其他语言的请自行添加
     "code-runner.executorMap": {
-        "c": "cls && gcc $fileName -o build/$fileNameWithoutExt && .\\build\\$fileNameWithoutExt",
-        "cpp": "cls && g++ $fileName -o build/$fileNameWithoutExt && .\\build\\$fileNameWithoutExt",
+        "c": "cls && gcc $fileName -fexec-charset=GBK -o build/$fileNameWithoutExt && .\\build\\$fileNameWithoutExt",
+        "cpp": "cls && g++ $fileName -fexec-charset=GBK -o build/$fileNameWithoutExt && .\\build\\$fileNameWithoutExt",
     },
     // 运行代码后切换焦点至终端，方便直接输入测试数据
     "code-runner.preserveFocus": false,
@@ -29,5 +29,11 @@
     // 词语优先级
     "editor.suggest.localityBonus": true,
     // 这里更改为根据之前的补全进行排序
-    "editor.suggestSelection": "recentlyUsedByPrefix"
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "files.associations": {
+        "windows.h": "c",
+        "mcx.h": "c",
+        "linkedstack.c": "cpp",
+        "containers.h": "c"
+    }
 }

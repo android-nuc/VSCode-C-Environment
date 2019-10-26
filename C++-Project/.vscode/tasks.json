@@ -4,12 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "compile",
+            "label": "compileCpp",
             "type": "shell",
             "command": "g++",
             "args": [
                 "-g",
                 "\"${file}\"",
+                "-fexec-charset=GBK",
                 "-o",
                 "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
             ],
@@ -27,7 +28,7 @@
                 "owner": "cpp",
                 "fileLocation": "absolute",
                 "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error):\\s+(.*)$",
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
                     "file": 1,
                     "line": 2,
                     "column": 3,
@@ -35,6 +36,60 @@
                     "message": 5
                 }
             }
+        },
+        {
+            "label": "compileC",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "\"${file}\"",
+                "-fexec-charset=GBK",
+                "-o",
+                "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false,
+                "echo": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "compileMSVC",
+            "type": "shell",
+            "command": "${fileDirname}\\.vscode\\compileMSVC.bat",
+            "args": [
+                "\"${file}\"",
+                "\"${fileDirname}\\build\\${fileBasename}\""
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false,
+                "echo": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
         }
     ]
 }

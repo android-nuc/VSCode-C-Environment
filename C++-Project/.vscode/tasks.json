@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "compileCpp",
+            "label": "(GCC) Compile C++",
             "type": "shell",
             "command": "g++",
             "args": [
@@ -38,7 +38,7 @@
             }
         },
         {
-            "label": "compileC",
+            "label": "(GCC) Compile C",
             "type": "shell",
             "command": "gcc",
             "args": [
@@ -72,12 +72,13 @@
             }
         },
         {
-            "label": "compileMSVC",
+            "label": "(MSVC) Compile C++",
             "type": "shell",
             "command": "${fileDirname}\\.vscode\\compileMSVC.bat",
             "args": [
                 "\"${file}\"",
-                "\"${fileDirname}\\build\\${fileBasename}\""
+                "\"${fileDirname}\\build\\${fileBasename}\"",
+                "\"${fileDirname}\\build\""
             ],
             "presentation": {
                 "reveal": "always",

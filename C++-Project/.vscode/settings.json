@@ -31,9 +31,8 @@
     // 这里更改为根据之前的补全进行排序
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "files.associations": {
-        "windows.h": "c",
-        "mcx.h": "c",
-        "linkedstack.c": "cpp",
+        "windows.h": "cpp",
+        "linkedbinarytree.c": "cpp",
         "containers.h": "c"
     }
 }

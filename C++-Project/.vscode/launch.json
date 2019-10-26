@@ -26,7 +26,7 @@
                 }
             ],
             // 这里要与你在 tasks.json 中配置的 label 一致
-            "preLaunchTask": "compileCpp",
+            "preLaunchTask": "(GCC) Compile C++",
         },
         {
             "name": "(GCC) Launch C",
@@ -49,7 +49,7 @@
                 }
             ],
             // 这里要与你在 tasks.json 中配置的 label 一致
-            "preLaunchTask": "compileC",
+            "preLaunchTask": "(GCC) Compile C",
         },
         {
             "name": "(MSVC) Launch C++",
@@ -60,7 +60,8 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "preLaunchTask": "compileMSVC"
+            "externalConsole": true,
+            "preLaunchTask": "(MSVC) Compile C++"
         }
     ]
 }

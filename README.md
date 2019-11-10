@@ -10,8 +10,8 @@
 
 ## 使用方法
 
-1. 下载 msys64 环境[【从百度云】](https://pan.baidu.com/s/1C0gi_RsI6OD9jGel8Tz7Vg)[【从Office365】](https://cutesakura-my.sharepoint.com/:u:/g/personal/kenvix_cutesakura_net/Ec20TtbKog9HkAPF9E4tZhsBwGX9fBhQghBqlfYuyTDbhA?e=EXl0l0) [【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/1.0/Msys64-RT.zip) [【内网高速下载 (必须在实验室)】](https://lab.kenvix.com:7401/Msys64-RT.zip)
-2. 直接整个压缩包解压到 **C盘** （可能需要管理员权限）
+1. 下载 msys64 环境[【百度云9uty】](https://pan.baidu.com/s/1nRSN214F-NoXCD_sGiTP6Q)[【从Office365】](https://cutesakura-my.sharepoint.com/:u:/g/personal/kenvix_cutesakura_net/ETEAfFOThdhMmvo1IlwRODMBLH9tnXH8zyQDfZIjPOzYkw?e=cEvmsa) [【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/2.0/Msys64-RT.exe) [【内网高速下载 (必须在实验室)】](http://10.0.117.9/Msys64-RT.exe)
+2. 以管理员权限运行，直接安装到 **C盘** 
 3. 将 `C:\RT\msys64\mingw64\bin` 添加到系统 `PATH` 环境变量（[不知道如何修改环境变量请点击此处](https://jingyan.baidu.com/article/358570f69e8a13ce4724fcf8.html)）
 4. 安装 Visual Studio Code[【下载地址】](https://code.visualstudio.com/docs/?dv=win64user)
 5. 打开 Visual Studio Code，按下 Ctrl+Shift+X

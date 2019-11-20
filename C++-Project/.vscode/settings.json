@@ -45,6 +45,7 @@
         "queue": "c",
         "anytype.c": "cpp",
         "intgraph.c": "cpp",
-        "linkedlist.c": "cpp"
+        "linkedlist.c": "cpp",
+        "debug.c": "cpp"
     }
 }

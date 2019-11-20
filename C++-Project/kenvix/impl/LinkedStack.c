@@ -79,7 +79,15 @@ void LinkedStack_Traversal(LinkedStack* stack, void (*callback)(GenericType data
 }
 
 void LinkedStack_Destroy(LinkedStack* stack) {
-    LinkedStack_TraversalElements(stack, free);
+    LinkedStackElement* last = NULL;
+    LinkedStackElement* current = stack->top;
+    
+    while (current != NULL) {
+        last = current;
+        current = last->prev;
+        free(last);
+    }
+    
     free(stack);
 }
 #endif

@@ -69,12 +69,13 @@ void LinkedStack_TraversalElements(LinkedStack* stack, void (*callback)(LinkedSt
     }
 }
 
-void __elementToData(LinkedStackElement* data, void (*callback)(GenericType data)) {
-    callback(data->data);
-}
-
 void LinkedStack_Traversal(LinkedStack* stack, void (*callback)(GenericType data)) {
-    LinkedStack_TraversalElements(stack, __elementToData);
+    LinkedStackElement* element = stack->top;
+    
+    while (element != NULL) {
+        element = stack->top->prev;
+        callback(element->data);
+    }
 }
 
 void LinkedStack_Destroy(LinkedStack* stack) {

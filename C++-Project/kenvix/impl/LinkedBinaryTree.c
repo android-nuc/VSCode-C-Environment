@@ -90,8 +90,30 @@ LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrder(GenericType lastOr
     
 }
 
-LinkedBinaryTree* LinkedBinaryTree_CreateByPreAndMiddleOrderCharSequence(char* preOrderArray, char* middleOrderArray, int length) {
+LinkedBinaryTree* LinkedBinaryTree_CreateByPreOrderCharSequence(char* preOrderArray, size length, char emptyChar) {
+    char state = 0; //h l r
+    LinkedBinaryTree* rootTree = LinkedBinaryTree_New(castCharToGenericType(preOrderArray[0]), NULL, NULL);
+    LinkedBinaryTree* currentTree = rootTree;
 
+    for (size i = 0; i < length; i++) {
+        char data = preOrderArray[i];
+        
+        switch (state) {
+            case 0:
+                
+                break;
+
+            case 1:
+                
+                break;
+
+            case 2:
+                
+                break;
+        }
+
+        state = (state + 1) % 3;
+    }
 }
 
 LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrderCharSequence(char* lastOrderArray, char* middleOrderArray, int length) {

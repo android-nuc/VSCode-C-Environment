@@ -10,5 +10,5 @@ void LinkedBinaryTree_LastOrderTraversal(LinkedBinaryTree* tree, void (*callback
 LinkedBinaryTree* LinkedBinaryTree_GetDemoTree();
 LinkedBinaryTree* LinkedBinaryTree_CreateByPreAndMiddleOrder(GenericType preOrderArray, GenericType middleOrderArray, int length, int unitSize);
 LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrder(GenericType lastOrderArray, GenericType middleOrderArray, int length, int unitSize);
-LinkedBinaryTree* LinkedBinaryTree_CreateByPreAndMiddleOrderCharSequence(char* preOrderArray, char* middleOrderArray, int length);
+LinkedBinaryTree* LinkedBinaryTree_CreateByPreOrderCharSequence(char* preOrderArray, size length, char emptyChar);
 LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrderCharSequence(char* lastOrderArray, char* middleOrderArray, int length);

@@ -43,6 +43,8 @@
         "stddef.h": "c",
         "linkedstack.h": "c",
         "queue": "c",
-        "anytype.c": "cpp"
+        "anytype.c": "cpp",
+        "intgraph.c": "cpp",
+        "linkedlist.c": "cpp"
     }
 }

@@ -62,13 +62,42 @@
                 "owner": "cpp",
                 "fileLocation": "absolute",
                 "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
+                    "regexp": "(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)",
                     "file": 1,
                     "line": 2,
                     "column": 3,
                     "severity": 4,
                     "message": 5
                 }
+            }
+        },
+        {
+            "label": "(Clang) Compile C++",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-g",
+                "\"${file}\"",
+                "-Wall",
+                "-fcolor-diagnostics",
+                "--target=x86_64-w64-mingw",
+                "-o",
+                "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false,
+                "echo": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": "absolute",
+                "base": "$gcc"
             }
         },
         {

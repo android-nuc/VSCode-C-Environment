@@ -12,6 +12,18 @@
             "cppStandard": "c++17"
         },
         {
+            "name": "LLVM Clang-x64",
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "C:\\RT\\LLVM\\bin\\clang++.exe",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\RT\\msys64\\mingw64\\include\\**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        },
+        {
             "name": "MSVC-x64",
             "intelliSenseMode": "msvc-x64",
             "includePath": [

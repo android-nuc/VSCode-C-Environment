@@ -12,7 +12,7 @@
                 "\"${file}\"",
                 "-fexec-charset=GBK",
                 "-o",
-                "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
+                "\"${workspaceFolder}\\build\\${fileBasenameNoExtension}\""
             ],
             "presentation": {
                 "reveal": "always",

@@ -12,7 +12,7 @@
                 "\"${file}\"",
                 "-fexec-charset=GBK",
                 "-o",
-                "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
+                "\"${workspaceFolder}\\build\\${fileBasenameNoExtension}\""
             ],
             "presentation": {
                 "reveal": "always",
@@ -46,7 +46,7 @@
                 "\"${file}\"",
                 "-fexec-charset=GBK",
                 "-o",
-                "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
+                "\"${workspaceFolder}\\build\\${fileBasenameNoExtension}\""
             ],
             "presentation": {
                 "reveal": "always",
@@ -82,7 +82,7 @@
                 "-fcolor-diagnostics",
                 "--target=x86_64-w64-mingw",
                 "-o",
-                "\"${fileDirname}\\build\\${fileBasenameNoExtension}\""
+                "\"${workspaceFolder}\\build\\${fileBasenameNoExtension}\""
             ],
             "presentation": {
                 "reveal": "always",
@@ -106,8 +106,8 @@
             "command": "${fileDirname}\\.vscode\\compileMSVC.bat",
             "args": [
                 "\"${file}\"",
-                "\"${fileDirname}\\build\\${fileBasename}\"",
-                "\"${fileDirname}\\build\""
+                "\"${workspaceFolder}\\build\\${fileBasename}\"",
+                "\"${workspaceFolder}\\build\""
             ],
             "presentation": {
                 "reveal": "always",

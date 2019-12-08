@@ -1,5 +1,6 @@
 #ifndef __IncludeGuard_AnyType
 #include "impl/AnyType.c"
+#include <stdbool.h>
 #endif
 
 GenericType castPointerToGenericType(void* pointer);

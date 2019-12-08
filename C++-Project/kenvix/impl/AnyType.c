@@ -1,6 +1,7 @@
 #ifndef __IncludeGuard_AnyType
 #define __IncludeGuard_AnyType
 #include <stddef.h>
+#include <stdbool.h>
 
 typedef union GenericType {
     void* pointer;
@@ -12,6 +13,8 @@ typedef union GenericType {
     float floatDecimal;
     bool boolean;
 } GenericType;
+
+
 
 GenericType castPointerToGenericType(void* pointer) {
     return (GenericType) pointer;

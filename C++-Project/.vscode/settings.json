@@ -47,6 +47,7 @@
         "intgraph.c": "cpp",
         "linkedlist.c": "cpp",
         "debug.c": "cpp",
-        "MAIN.C": "cpp"
+        "MAIN.C": "cpp",
+        "arrayutils.c": "cpp"
     }
 }

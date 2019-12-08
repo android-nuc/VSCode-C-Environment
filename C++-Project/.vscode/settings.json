@@ -33,6 +33,25 @@
     "files.associations": {
         "windows.h": "cpp",
         "linkedbinarytree.c": "cpp",
+<<<<<<< HEAD
+        "containers.h": "c",
+        "array": "c",
+        "vector": "c",
+        "xstring": "c",
+        "string": "c",
+        "string_view": "c",
+        "xutility": "c",
+        "stddef.h": "c",
+        "linkedstack.h": "c",
+        "queue": "c",
+        "anytype.c": "cpp",
+        "intgraph.c": "cpp",
+        "linkedlist.c": "cpp",
+        "debug.c": "cpp",
+        "MAIN.C": "cpp",
+        "arrayutils.c": "cpp"
+=======
         "containers.h": "c"
+>>>>>>> 2e442e8d629fcca444c698fc69aae7abb1ef69a1
     }
 }

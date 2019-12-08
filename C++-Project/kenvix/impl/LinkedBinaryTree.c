@@ -33,8 +33,6 @@ void LinkedBinaryTree_PreOrderTraversal(LinkedBinaryTree* tree, void (*callback)
             element = ((LinkedBinaryTree*) LinkedStack_Pop(stack).pointer)->right;
         }
     }
-
-    LinkedStack_Destroy(stack);
 }
 
 void LinkedBinaryTree_MiddleOrderTraversal(LinkedBinaryTree* tree, void (*callback)(GenericType data)) {
@@ -51,8 +49,6 @@ void LinkedBinaryTree_MiddleOrderTraversal(LinkedBinaryTree* tree, void (*callba
             element = lastElement->right;
         }
     } while (!LinkedStack_IsEmpty(stack) || element != NULL);
-
-    LinkedStack_Destroy(stack);
 }
 
 void LinkedBinaryTree_LastOrderTraversal(LinkedBinaryTree* tree, void (*callback)(GenericType data)) {
@@ -79,9 +75,6 @@ void LinkedBinaryTree_LastOrderTraversal(LinkedBinaryTree* tree, void (*callback
             }
         }
     } while (!LinkedStack_IsEmpty(stack) || element != NULL);
-
-    LinkedStack_Destroy(stack);
-    LinkedStack_Destroy(flagStack);
 }
 
 LinkedBinaryTree* LinkedBinaryTree_CreateByPreAndMiddleOrder(GenericType preOrderArray, GenericType middleOrderArray, int length, int unitSize) {
@@ -97,48 +90,8 @@ LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrder(GenericType lastOr
     
 }
 
-LinkedBinaryTree* LinkedBinaryTree_CreateByPreOrderCharSequence(char* preOrderArray, size length, char emptyChar) {
-    char state = 'l'; //f l r
-    LinkedBinaryTree* rootTree = LinkedBinaryTree_New(castCharToGenericType(preOrderArray[0]), NULL, NULL);
-    LinkedBinaryTree* currentTree = rootTree;
-    LinkedStack* stack = LinkedStack_New();
-    size i = 1;
+LinkedBinaryTree* LinkedBinaryTree_CreateByPreAndMiddleOrderCharSequence(char* preOrderArray, char* middleOrderArray, int length) {
 
-    while (i < length) {
-        char data = preOrderArray[i];
-        
-        switch (state) {
-            case 'l':
-                if (data != emptyChar) {
-                    LinkedBinaryTree* newTree = LinkedBinaryTree_New(castCharToGenericType(data), NULL, NULL);
-                    currentTree->left = newTree;
-                    currentTree = newTree;
-                    LinkedStack_Push(stack, castPointerToGenericType(currentTree));
-                    i++;
-                    //putc(data, stderr);
-                } else {
-                    state = 'r';
-                }
-                break;
-
-            case 'r':
-                if (data != emptyChar) {
-                    currentTree = LinkedStack_Pop(stack).pointer;
-                    LinkedBinaryTree* newTree = LinkedBinaryTree_New(castCharToGenericType(data), NULL, NULL);
-                    currentTree->right = newTree;
-                    i++;
-                    state = 'l';
-                    //putc(data, stderr);
-                } else {
-                    state = 'l';
-                    i++;
-                }
-                break;
-        }
-    }
-
-    LinkedStack_Destroy(stack);
-    return rootTree;
 }
 
 LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrderCharSequence(char* lastOrderArray, char* middleOrderArray, int length) {
@@ -146,32 +99,7 @@ LinkedBinaryTree* LinkedBinaryTree_CreateByLastAndMiddleOrderCharSequence(char* 
 }
 
 LinkedBinaryTree* LinkedBinaryTree_Destroy(LinkedBinaryTree* tree) {
-    LinkedStack* stack = LinkedStack_New();
-    LinkedStack* flagStack = LinkedStack_New();
-    LinkedBinaryTree* element = tree;
 
-     do {
-        if (element != NULL) {
-            LinkedStack_Push(stack, castPointerToGenericType(element)); //set rollback point
-            LinkedStack_Push(flagStack, castBoolToGenericType(false));
-            element = element->left; //view left node
-        } else {
-            LinkedBinaryTree* lastElement = LinkedStack_GetTopData(stack).pointer;
-            int lastElementFlag = LinkedStack_GetTopData(flagStack).integer;
-            
-            if (lastElementFlag == true) {
-                LinkedStack_Pop(stack);
-                LinkedStack_Pop(flagStack);
-                free(lastElement);
-            } else {
-                LinkedStack_SetTopData(flagStack, (GenericType) true);
-                element = lastElement->right;
-            }
-        }
-    } while (!LinkedStack_IsEmpty(stack) || element != NULL);
-
-    LinkedStack_Destroy(stack);
-    LinkedStack_Destroy(flagStack);
 }
 
 LinkedBinaryTree* LinkedBinaryTree_GetDemoTree() {

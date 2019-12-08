@@ -85,6 +85,16 @@ size* IntGraph_GetAdjacencyMatrix(IntGraph* graph) {
     return matrix;    
 } 
 
+IntGraph* IntGraph_CreateGraphByAdjacencyMatrix(size* matrix, size width) {
+    IntGraph* graph = IntGraph_New(width);
+    
+    for (size i = 0; i < width; i++) {
+        for (size j = 0; j < width; j++) {
+            
+        }
+    }
+}
+
 GenericArray* IntGraph_GetDijkstraMinPath(IntGraph* graph, size fromOffset, size toOffset) {
     
 }

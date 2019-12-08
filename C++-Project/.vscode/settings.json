@@ -33,6 +33,7 @@
     "files.associations": {
         "windows.h": "cpp",
         "linkedbinarytree.c": "cpp",
+<<<<<<< HEAD
         "containers.h": "c",
         "array": "c",
         "vector": "c",
@@ -49,5 +50,8 @@
         "debug.c": "cpp",
         "MAIN.C": "cpp",
         "arrayutils.c": "cpp"
+=======
+        "containers.h": "c"
+>>>>>>> 2e442e8d629fcca444c698fc69aae7abb1ef69a1
     }
 }

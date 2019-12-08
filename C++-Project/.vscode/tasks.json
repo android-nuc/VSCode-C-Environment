@@ -62,7 +62,11 @@
                 "owner": "cpp",
                 "fileLocation": "absolute",
                 "pattern": {
+<<<<<<< HEAD
                     "regexp": "(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)",
+=======
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(error|warning|note):\\s+(.*)$",
+>>>>>>> 2e442e8d629fcca444c698fc69aae7abb1ef69a1
                     "file": 1,
                     "line": 2,
                     "column": 3,
@@ -72,6 +76,7 @@
             }
         },
         {
+<<<<<<< HEAD
             "label": "(Clang) Compile C++",
             "type": "shell",
             "command": "clang++",
@@ -101,6 +106,8 @@
             }
         },
         {
+=======
+>>>>>>> 2e442e8d629fcca444c698fc69aae7abb1ef69a1
             "label": "(MSVC) Compile C++",
             "type": "shell",
             "command": "${fileDirname}\\.vscode\\compileMSVC.bat",

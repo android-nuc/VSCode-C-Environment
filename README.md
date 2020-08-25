@@ -15,7 +15,7 @@
 3. 将 `C:\RT\msys64\mingw64\bin` 添加到系统 `PATH` 环境变量（[不知道如何修改环境变量请点击此处](https://jingyan.baidu.com/article/358570f69e8a13ce4724fcf8.html)）
 4. 安装 Visual Studio Code[【下载地址】](https://code.visualstudio.com/docs/?dv=win64user)
 5. 打开 Visual Studio Code，按下 Ctrl+Shift+X
-6. 依次搜索、安装如下扩展：`C/C++` `Code Runner`
+6. 依次搜索、安装如下扩展：`Chinese (Simplified) Language Pack` `C/C++` `Code Runner`
 7. 下载这个项目（点击右上方<font color=darkgreen>绿色的 **Clone or Download**</font>，然后点击 **Download Zip**）
 8. 解压这个项目（**千万不要解压到有中文或空格的路径！** 最好直接解压到 `C:\RT\`），进入 VSCode-C-Environment-master 文件夹
 9. (C语言)右击 `C-Project` 这个文件夹（C++为`C++-Project`），选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）。如果右键没有 `Open with Code` 按钮，则请在 VSCode 中点击 左上角的 *文件* - *打开文件夹*，然后选择对应的目录

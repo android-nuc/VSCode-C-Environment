@@ -20,7 +20,7 @@
 8. 解压这个项目（**千万不要解压到有中文或空格的路径！** 最好直接解压到 `C:\RT\`），进入 VSCode-C-Environment-master 文件夹
 9. (C语言)右击 `C-Project` 这个文件夹（C++为`C++-Project`），选择 `Open with Code` 可以看到下面的目录（此时打开的vscode底栏是蓝色的，若是紫色则操作有误）。如果右键没有 `Open with Code` 按钮，则请在 VSCode 中点击 左上角的 *文件* - *打开文件夹*，然后选择对应的目录
 
-![Screenshot1](images/1.jpg)
+![Screenshot1](https://s1.ax1x.com/2020/08/27/d4tRET.png)
 
 * 如果你打开项目后虽然底栏是蓝色但是没法编译 C 语言且要求你进行编译配置，说明**目录开错了**（重读第8、9步，好多人**错误地**开成了 `VSCode-C-Environment-master`）。
 * 如果你可以开始编译但提示找不到 gcc，或者是出现`'gcc'`后面跟着一堆????问号乱码，说明环境变量配置错了（重读第 3 步，然后重启vscode）。
@@ -63,7 +63,7 @@ Launch 之前的括号表示编译器。普通用户请使用 GCC。若想要切
 
 ### 注：关于代码提示
 
-- 首先请在`C-Project/.vscode/c.code-snippets`中的`announce`(文件声明)字段添加作者名字(如下图在author: 后面写上作者名(无需真实姓名))<br>![author](images/author.png)
+- 首先请在`C-Project/.vscode/c.code-snippets`中的`announce`(文件声明)字段添加作者名字(如下图在author: 后面写上作者名(无需真实姓名))<br>![author](https://s1.ax1x.com/2020/08/27/d4tRET.png)
 
 - 这里的代码Snippets均重写过，采用的是`K&R`风格，默认为`微软风格`，但是会根据用户之前的选择进行代码提示，所以如果第一次选择`K&R`风格后面便会一直使用`K&R`风格
 

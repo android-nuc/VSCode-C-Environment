@@ -8,6 +8,16 @@
 
 **更新环境时请*不要*覆盖`c.code-snippets`文件！覆盖除此文件以外的其他所有文件即可更新环境**
 
+## 一键安装
+
+一键安装程序使用C#开发，目前支持Windows10 64位系统。如果您觉得下面的步骤比较复杂可以使用一键安装包安装（使用一键安装包后就不用进行下面的使用方法中的步骤了）
+[项目地址](https://gitee.com/nidb/vscode--c)
+本程序适用于没有安装过环境（LLVM、mingw64-w64、VSCode）的计算机使用，如果您不知道小括号中是什么或者没有安装过他们或者没有进行过下面的“使用方法”章节，可以选择使用一键安装程序
+1. 下载文件：[【城通网盘】](https://545c.com/file/24893413-459517869)
+2. 双击下载完的文件打开，点击“开始”；
+3. 等待进度条走完并提示“解压成功”后，打开解压出的文件夹"VSCode+C Installer"，双击“用户说明文件.html”查看说明，双击"VSCode+C Installer.exe"打开安装器；
+4. 点击安装器上的“开始安装”按钮，等待安装完成。未弹出“安装完成”窗口之前，请勿关闭安装器。
+
 ## 使用方法
 
 1. 下载 msys64 环境[【百度云9uty】](https://pan.baidu.com/s/1nRSN214F-NoXCD_sGiTP6Q)[【从Office365】](https://cutesakura-my.sharepoint.com/:u:/g/personal/kenvix_cutesakura_net/ETEAfFOThdhMmvo1IlwRODMBLH9tnXH8zyQDfZIjPOzYkw?e=cEvmsa) [【从Github】](https://github.com/android-nuc/VSCode-C-Environment/releases/download/2.0/Msys64-RT.exe) [【内网高速下载 (必须在实验室)】](http://10.0.117.9/Msys64-RT.exe)
